@@ -1,0 +1,28 @@
+<h1 class= "center">Meetup: <em> <%= @meetup_name %> </em></h1>
+
+<p>Location: <%= @meetup_location %> </p>
+
+<p>Description: <%= @meetup_description %> </p>
+
+<form action="/meetups/join/<%= @meetup_id %>" method="post">
+ <div style = "color: black;">
+    <input type="submit" value="J O I N">
+  </div>
+</form>
+<br>
+<% if @joined %>
+   <form action="/meetups/join/<%= @meetup_id %>" method="post">
+     <div style = "color: black;">
+        <input type="submit" value="L E A V E">
+     </div>
+   </form>
+<% end %>
+
+
+<ul>
+<% if @joined == true %>
+  <h2> List of members joined: </h2>
+  <li> <img class="image" src="<%= @avatar%>"> - <%= @username %> </li>
+<% end %>
+</ul>
+

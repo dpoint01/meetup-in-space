@@ -1,0 +1,60 @@
+
+body {
+  background-image: url('/images/stardust.png');
+  color: #FFFFFF;
+}
+
+a,
+a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  background-color: #3C3C3C;
+}
+
+.top-bar-section {
+  display: inline-block;
+  float: right;
+}
+
+.top-bar-section li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.logo {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.flash {
+  padding: 1em;
+  background-color: #3B9089;
+}
+
+.new-meetup div input,
+.new-meetup div textarea {
+  color: black;
+  display: inline-block
+  ;
+ }
+ .center {
+  margin-left:350px;
+  margin-right: auto;
+}
+.image {
+    width: 60px;
+    height: 60px;
+}
+
+.form-wrapper {
+  margin-bottom: 1em;
+
+}
